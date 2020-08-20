@@ -1,0 +1,40 @@
+{
+  "name": "mern-destiny",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "extract-zip": "^1.6.7",
+    "https": "^1.0.0",
+    "mongoose": "^5.6.12",
+    "morgan": "^1.9.1",
+    "passport": "^0.4.0",
+    "passport-oauth2": "^1.5.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0"
+  },
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "./node_modules/.bin/concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/method77/mern-destiny.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/method77/mern-destiny/issues"
+  },
+  "homepage": "https://github.com/method77/mern-destiny#readme"
+}
